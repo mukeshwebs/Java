@@ -1,0 +1,28 @@
+//there are two types of polymorphism
+
+1. Run time poly -> acheieved by method overiding
+2. Compile time poly -> acheived by method overloading
+
+//method overloading ->multiple methods can have the same name with different parameter
+
+static int plusMethodInt(int x, int y) {
+  return x + y;
+}
+
+static double plusMethodDouble(double x, double y) {
+  return x + y;
+}
+
+//method overiding ->same method name and same parameter
+
+
+//Polymorphism real life example
+
+Suppose if you are in class room that time you behave like a student, 
+when you are in market at that time you behave like a customer,
+when you at your home at that time you behave like a son or daughter,
+Here one person present in different-different behaviors.
+
+
+
+
