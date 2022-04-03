@@ -1,0 +1,38 @@
+1. difference bw error and exception?
+
+error - It is irrecoverable ex - StackoverflowError ,IOError 
+
+Exception - It is recoverable ex  - NullPointerException, ArrayOutofBound
+
+2. Java Exception
+
+try - The "try" keyword is used to specify a block where we should place an exception code. It means we can't use try block alone. 
+
+catch - The "catch" block is used to handle the exception. It must be preceded by try block which means we can't use catch block alone
+
+finally - The "finally" block is used to execute the necessary code of the program. It is executed whether an exception is handled or not.
+
+throw - The "throw" keyword is used to throw an exception.
+
+throws - The "throws" keyword is used to declare exceptions. It specifies that there may occur an exception in the method.
+
+
+Examples: 
+
+//try-catch block
+
+public class JavaExceptionExample{  
+  public static void main(String args[]){  
+   try{  
+      //code that may raise exception  
+      int data=100/0;  
+   }catch(ArithmeticException e){System.out.println(e);}  
+   //rest code of the program   
+   System.out.println("rest of the code...");  
+  }  
+}  
+
+
+
+
+
