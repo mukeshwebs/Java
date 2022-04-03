@@ -21,3 +21,6 @@ public class Main {
     System.out.println(myCar.modelYear + " " + myCar.modelName);
   }
 }
+
+
+refer: https://www.programiz.com/java-programming/constructors
