@@ -1,0 +1,46 @@
+//pair class
+
+Pair class is a generic class. It represents a simple container to hold two values of potentially different types.
+The Pair class provides two instance variables, key and value, to store the two values. It also offers methods for accessing and modifying these values
+
+import javafx.util.Pair; // Prior to Java 11
+// import java.util.Pair; // Java 11 and later
+
+public class Main {
+    public static void main(String[] args) {
+        Pair<String, Integer> pair = new Pair<>("John", 25);
+
+        String name = pair.getKey();
+        int age = pair.getValue();
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+
+        pair = new Pair<>("Alice", 30);
+        pair = pair.setValue(pair.getValue() + 1);
+
+        System.out.println("Updated age: " + pair.getValue());
+    }
+}
+
+***************************************************************************
+
+class Compute 
+{
+    static pair getMinMax(long a[], long n)  
+    {
+        //Write your code here
+        pair minmax = new pair(a[0], a[0]);
+        
+        for(int i=0; i<n; i++){
+            //find min 
+            if(a[i]<minmax.first){
+                minmax.first  = a[i];
+            }
+            if (a[i]>minmax.second){
+                minmax.second=a[i];
+            }
+        }
+        return minmax;
+    }
+}
